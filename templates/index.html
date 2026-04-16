@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Viral Clip Builder</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>YouTube ➜ Viral Clips + Long Edits</h1>
+      <form method="post" action="/process">
+        <label for="youtube_url">YouTube URL</label>
+        <input id="youtube_url" name="youtube_url" required placeholder="https://www.youtube.com/watch?v=..." />
+        <button type="submit">Process</button>
+      </form>
+      <p>Strict mode: no fake outputs, no full original export, retries on failure.</p>
+    </main>
+  </body>
+</html>

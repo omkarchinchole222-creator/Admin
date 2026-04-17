@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": ["short_clips", "long_videos", "metadata"],
+  "properties": {
+    "short_clips": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": { "type": "string" }
+    },
+    "long_videos": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "string" }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["timestamps", "scores", "categories"]
+    }
+  }
+}
